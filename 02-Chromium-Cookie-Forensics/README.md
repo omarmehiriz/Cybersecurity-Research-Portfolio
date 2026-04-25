@@ -10,7 +10,7 @@ El objetivo de este laboratorio es entender el flujo de vida de una identidad di
 ## Desafíos Técnicos y Soluciones de Ingeniería
 Durante el desarrollo se superaron barreras críticas de seguridad implementadas en los navegadores modernos:
 
-* **Hot-Cloning de Base de Datos:** Los navegadores bloquean el archivo `Cookies` mediante el motor SQLite durante su ejecución. Se implementó una lógica de replicación temporal para permitir la auditoría sin interrumpir el proceso del usuario.
+* **Hot-Cloning de Base de Datos:** Los navegadores bloquean el archivo Cookies mediante el motor SQLite durante su ejecución. Se implementó una lógica de replicación temporal para permitir la auditoría sin interrumpir el proceso del usuario.
 * **Protocolo de Streaming NDJSON:** Para manejar volúmenes masivos de datos (más de 5,000 registros), se evolucionó de un envío monolítico a un sistema de *streaming* línea por línea a través de sockets TCP, evitando *timeouts* y desbordamientos de buffer.
 * **Decryption Engine (AES-256-GCM):** Implementación de descifrado simétrico recuperando la clave maestra desde el archivo `Local State`, protegida originalmente por la API DPAPI de Windows.
 
@@ -19,7 +19,7 @@ Este proyecto no solo ilustra el vector de ataque, sino que sirve como base para
 
 ### 1. Endurecimiento del Endpoint
 * **App-Bound Encryption:** Verificación de la eficacia de las nuevas capas de protección de Chrome (v127+) que ligan el cifrado a la identidad del ejecutable.
-* **Detección de Comportamiento:** Monitoreo de accesos inusuales a la carpeta `User Data` y llamadas sospechosas a `crypt32.dll` por procesos no firmados.
+* **Detección de Comportamiento:** Monitoreo de accesos inusuales a la carpeta User Data y llamadas sospechosas a crypt32.dll por procesos no firmados.
 
 ### 2. Contramedidas en el Lado del Servidor
 Para que un robo de cookies sea ineficaz, se proponen las siguientes defensas:
@@ -33,9 +33,9 @@ Para que un robo de cookies sea ineficaz, se proponen las siguientes defensas:
 
 ### 3. Flags de Seguridad en Cookies
 Auditoría de la implementación correcta de:
-* `HttpOnly`: Prevenir exfiltración vía XSS.
-* `SameSite=Strict`: Neutralizar vectores CSRF.
-* `__Host- prefix`: Restringir la cookie exclusivamente al dominio de origen.
+* HttpOnly: Prevenir exfiltración vía XSS.
+* SameSite=Strict: Neutralizar vectores CSRF.
+* __Host- prefix: Restringir la cookie exclusivamente al dominio de origen.
 
 
 
@@ -46,4 +46,4 @@ Auditoría de la implementación correcta de:
 * **Networking:** Sockets TCP/IP (Custom Protocol).
   ---
 
-** Nota Ética: Este software ha sido desarrollado estrictamente con fines educativos y de investigación académica para mejorar las posturas de seguridad defensiva. El autor no se hace responsable del uso indebido de esta herramienta. Su ejecución solo está permitida en entornos controlados bajo consentimiento.
+**Nota Ética:** Este software ha sido desarrollado estrictamente con fines educativos y de investigación académica para mejorar las posturas de seguridad defensiva. El autor no se hace responsable del uso indebido de esta herramienta. Su ejecución solo está permitida en entornos controlados bajo consentimiento.
