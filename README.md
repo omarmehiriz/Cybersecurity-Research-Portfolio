@@ -41,7 +41,7 @@ Para neutralizar los vectores de ataque presentados en estos módulos, se recomi
 
 ---
 
-## ⚠️ Disclaimer Ético
+##  Disclaimer Ético
 Este repositorio ha sido creado exclusivamente con fines educativos y como parte de una investigación académica 
 - **No** se promueve el uso de estas herramientas para actividades ilícitas.
 - El autor **no** se hace responsable del uso indebido del código aquí expuesto.
