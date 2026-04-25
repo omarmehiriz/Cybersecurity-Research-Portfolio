@@ -216,3 +216,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Custom rules for Browser Audit Project ---
+# Ignorar reportes de sesión y bases de datos extraídas
+audit_session_report.json
+cookies_finales.json
+cookies_full.json
+audit_tmp.db
+temp_*
+*.json
+*.db
