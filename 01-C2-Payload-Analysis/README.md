@@ -6,7 +6,7 @@ Este módulo recrea un entorno de Mando y Control (C2) profesional diseñado com
 * **agent.py (Endpoint Payload):** Simula un agente de acceso remoto. Incluye una técnica de distracción mediante un "Lure Document" (PDF real de la UAH) que se abre al ejecutarse el script para ocultar la actividad maliciosa en segundo plano. Contiene módulos de captura de pantalla y webcam para simular la exfiltración de datos.
 * **c2_server.py (Analyst Interface):** Consola de mando que actúa como el servidor de escucha. Permite al analista monitorizar conexiones entrantes, enviar comandos de auditoría y recibir evidencias exfiltradas de forma organizada.
 
-## 🔍 Análisis de Defensa (SOC / Blue Team Perspective)
+## Análisis de Defensa (SOC / Blue Team Perspective)
 
 El valor principal de este laboratorio reside en la identificación y comprensión de los
 Indicadores de Compromiso (IoCs) generados durante una intrusión simulada. A continuación
@@ -109,8 +109,8 @@ En caso de detección de un agente activo, el procedimiento recomendado es:
 
 ---
 
-> ⚠️ **Nota Ética:** Este laboratorio ha sido desarrollado con fines estrictamente educativos
-> en un entorno controlado y aislado. El análisis de estas técnicas tiene como único objetivo
-> la comprensión de los vectores de ataque para mejorar las capacidades defensivas en entornos SOC reales.
+  **Nota Ética:** Este laboratorio ha sido desarrollado con fines estrictamente educativos
+ en un entorno controlado y aislado. El análisis de estas técnicas tiene como único objetivo
+ la comprensión de los vectores de ataque para mejorar las capacidades defensivas en entornos SOC reales.
 ---
 **Nota Técnica:** El código contenido en este directorio ha sido securizado para su exhibición pública. Se han sustituido los endpoints reales por placeholders (`REDACTED_ENDPOINT`) y se ha restringido la ejecución de comandos arbitrarios por motivos éticos y de seguridad.
