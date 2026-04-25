@@ -6,9 +6,9 @@ Bienvenido a mi repositorio de investigación en ciberseguridad. Este proyecto d
 
 El framework está dividido en módulos progresivos que cubren desde la comunicación C2 básica hasta la ingeniería inversa de cifrado de navegadores:
 
-* **[Module 01: C2 Payload Analysis](./01_C2_Payload_Analysis)**: Implementación de canales de comunicación persistentes y ejecución remota de comandos.
+* **[Module 01: C2 Payload Analysis](./01-C2-Payload-Analysis)**: Implementación de canales de comunicación persistentes y ejecución remota de comandos.
 * **[Module 02: Chromium Cookie Forensics](./02_Chromium_Cookie_Forensics)**: Investigación sobre el descifrado de AES-GCM, bypass de bloqueos de bases de datos y secuestro de sesiones (Session Hijacking).
-* **[Module 03: Credential Extraction Audit](./03_Credential_Extraction_Audit)**: Estudio de mecanismos de supervivencia del agente en el sistema y técnicas de ofuscación para bypass de soluciones AV/EDR.
+* **[Module 03: Credential Extraction Audit](./03-Credential-Extraction-Audit)**: Estudio de mecanismos de supervivencia del agente en el sistema y técnicas de ofuscación para bypass de soluciones AV/EDR.
 
 ---
 
