@@ -109,8 +109,6 @@ En caso de detección de un agente activo, el procedimiento recomendado es:
 
 ---
 
-  **Nota Ética:** Este laboratorio ha sido desarrollado con fines estrictamente educativos
- en un entorno controlado y aislado. El análisis de estas técnicas tiene como único objetivo
- la comprensión de los vectores de ataque para mejorar las capacidades defensivas en entornos SOC reales.
----
-**Nota Técnica:** El código contenido en este directorio ha sido securizado para su exhibición pública. Se han sustituido los endpoints reales por placeholders (`REDACTED_ENDPOINT`) y se ha restringido la ejecución de comandos arbitrarios por motivos éticos y de seguridad.
+  **Nota Ética:** Este laboratorio ha sido desarrollado con fines estrictamente educativos en un entorno controlado y aislado. El análisis de estas técnicas tiene como único objetivo la comprensión de los vectores de ataque para mejorar las capacidades defensivas en entornos SOC reales.
+
+ **Nota Técnica:** El código contenido en este directorio ha sido securizado para su exhibición pública. Se han sustituido los endpoints reales por placeholders (`REDACTED_ENDPOINT`) y se ha restringido la ejecución de comandos arbitrarios por motivos éticos y de seguridad.
