@@ -39,7 +39,7 @@ Auditoría de la implementación correcta de:
 
 
 
-## 🛠️ Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 * **Lenguaje:** Python 3.x
 * **Criptografía:** PyCryptodome (AES-GCM), Win32crypt (DPAPI).
 * **Bases de Datos:** SQLite3 (Análisis forense).
