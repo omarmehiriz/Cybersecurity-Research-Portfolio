@@ -1,12 +1,12 @@
-# 📡 Module 01: C2 Simulation & Telemetry Analysis
+# Module 01: C2 Simulation & Telemetry Analysis
 
 Este módulo recrea un entorno de Mando y Control (C2) profesional diseñado como laboratorio de investigación. El objetivo es estudiar el comportamiento de agentes remotos, la telemetría que generan en la red y los artefactos forenses que dejan en el host tras una intrusión.
 
-## 🛠️ Componentes del Proyecto
+## Componentes del Proyecto
 * **`agent.py` (Endpoint Payload):** Simula un agente de acceso remoto. Incluye una técnica de distracción mediante un "Lure Document" (PDF real de la UAH) que se abre al ejecutarse el script para ocultar la actividad maliciosa en segundo plano. Contiene módulos de captura de pantalla y webcam para simular la exfiltración de datos.
 * **`c2_server.py` (Analyst Interface):** Consola de mando que actúa como el servidor de escucha. Permite al analista monitorizar conexiones entrantes, enviar comandos de auditoría y recibir evidencias exfiltradas de forma organizada.
 
-## 🔍 Análisis de Defensa (SOC/Blue Team Perspective)
+## Análisis de Defensa (SOC/Blue Team Perspective)
 El valor principal de este laboratorio es la identificación de **Indicadores de Compromiso (IoCs)** críticos para un entorno de monitorización real:
 
 ### 1. Telemetría y Análisis de Red
@@ -19,7 +19,7 @@ El valor principal de este laboratorio es la identificación de **Indicadores de
 * **Ejecución de Comandos:** Rastreo de comandos de reconocimiento (`whoami`, `hostname`, `net user`) ejecutados desde el payload.
 * **Artefactos Forenses:** Localización de archivos huérfanos (`snap.png`, `foto.jpg`) creados en directorios temporales de usuario sin intervención humana explícita.
 
-## 🛡️ Medidas de Mitigación Recomendadas
+## Medidas de Mitigación Recomendadas
 * **Reglas ASR (Attack Surface Reduction):** Configuración de políticas para bloquear la creación de procesos hijos por parte de aplicaciones de lectura de documentos o navegadores.
 * **DNS/Proxy Filtering:** Bloqueo preventivo de dominios asociados a servicios de túneles públicos conocidos.
 * **Auditoría de Eventos:** Activación y monitorización de los Logs de PowerShell (**Event ID 4104**) para inspeccionar bloques de código ejecutados en memoria.
