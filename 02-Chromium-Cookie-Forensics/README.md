@@ -12,7 +12,7 @@ Durante el desarrollo se superaron barreras críticas de seguridad implementadas
 
 * **Hot-Cloning de Base de Datos:** Los navegadores bloquean el archivo Cookies mediante el motor SQLite durante su ejecución. Se implementó una lógica de replicación temporal para permitir la auditoría sin interrumpir el proceso del usuario.
 * **Protocolo de Streaming NDJSON:** Para manejar volúmenes masivos de datos (más de 5,000 registros), se evolucionó de un envío monolítico a un sistema de *streaming* línea por línea a través de sockets TCP, evitando *timeouts* y desbordamientos de buffer.
-* **Decryption Engine (AES-256-GCM):** Implementación de descifrado simétrico recuperando la clave maestra desde el archivo `Local State`, protegida originalmente por la API DPAPI de Windows.
+* **Decryption Engine (AES-256-GCM):** Implementación de descifrado simétrico recuperando la clave maestra desde el archivo Local State, protegida originalmente por la API DPAPI de Windows.
 
 ## Análisis de Mitigación y Perspectiva Blue Team
 Este proyecto no solo ilustra el vector de ataque, sino que sirve como base para el endurecimiento de sistemas. Un equipo de defensa (**Blue Team**) puede utilizar estos hallazgos para implementar las siguientes contramedidas:
