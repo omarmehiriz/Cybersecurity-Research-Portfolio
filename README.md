@@ -37,7 +37,7 @@ Para neutralizar los vectores de ataque presentados en estos módulos, se recomi
 
 * **Vinculación Criptográfica:** Implementación de RFC 8471 (Token Binding) para ligar tokens al canal TLS.
 * **Contextual Auth:** Uso de IP-Binding y Device Fingerprinting para detectar discrepancias en el uso de tokens exfiltrados.
-* **Hardenning del Navegador:** Configuración estricta de flags `HttpOnly`, `SameSite` y la adopción de **App-Bound Encryption** (disponible en versiones recientes de Chrome).
+* **Hardenning del Navegador:** Configuración estricta de flags HttpOnly, SameSite y la adopción de **App-Bound Encryption** (disponible en versiones recientes de Chrome).
 
 ---
 
